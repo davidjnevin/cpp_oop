@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Set the project name
+project(CPP_OOP VERSION 1.0)
+
+# Group source files
+set(SOURCE_FILES
+		main.cpp
+)
+
+# Add the executables
+add_executable(App ${SOURCE_FILES})
+
+# Set C++ standard for the target
+target_compile_features(App PRIVATE cxx_std_17)
+
+# Include directories for the target
+target_include_directories(App PRIVATE include)
+
+
+# Link libraries to the target
+# target_link_libraries()
+
+
